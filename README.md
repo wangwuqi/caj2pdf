@@ -38,6 +38,16 @@ cc -Wall `pkg-config --cflags jbig2dec` -fPIC -shared -o libjbig2codec.so decode
 - [PyPDF2](https://github.com/mstamy2/PyPDF2)
 - [mutool](https://mupdf.com/index.html)
 
+Windows环境配置
+1. 安装 PyPDF2
+    ```
+    pip install PyPDF2
+     ```
+2. 下载 [mutool](https://mupdf.com/downloads/archive/mupdf-1.20.0-windows.zip)，解压后将mutool.exe拷贝到仓库根目录
+3. 使用示例
+    ```
+    python caj2pdf convert test.caj -o test.pdf
+    ```
 除了Microsoft Windows：我们提供Microsoft Windows 32-bit/64-bit DLLs，HN 格式需要
 
 - C/C++编译器
